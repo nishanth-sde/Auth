@@ -32,7 +32,7 @@ namespace JWT.Auth.Controllers
         {
             return Ok("Test successful");
         }
-
+        [Authorize]
         [HttpGet]
         [Route("GetOrder")]
         public async Task<IActionResult> GetOrder()
